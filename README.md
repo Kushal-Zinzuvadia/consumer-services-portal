@@ -1,6 +1,8 @@
 # consumer-services-portal
 Django application to provide consumer services for gas utilities
 
+Refer "Case_study_solution.pdf" for detailed solution. 
+
 Directory structure:
 └── kushal-zinzuvadia-consumer-services-portal/
     ├── README.md
