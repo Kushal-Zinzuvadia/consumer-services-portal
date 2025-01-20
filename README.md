@@ -1,19 +1,33 @@
-# consumer-services-portal
-Django application to provide consumer services for gas utilities. 
+# Consumer Services Portal
 
-Refer "Case_study_solution.pdf" for detailed solution. 
+A Django application to provide consumer services for gas utilities.
 
-For Customer:
-/login: Customer login
-/submit: Customer creates a service request
-/track: To track submitted requests
-/account: View customer information
-/account/edit: Edit customer info like Name, Email, Phone no. 
+## Overview
 
-For Support Representative:
-/admin: Add/Manage customers, service requests(Modify status)
+This portal allows customers to create and track service requests while enabling support representatives to manage customer information and requests.
+
+Refer to the **"Case_study_solution.pdf"** for a detailed solution.
+
+---
+
+## Features
+
+### For Customers
+- **/login**: Customer login
+- **/submit**: Submit a service request
+- **/track**: Track submitted requests
+- **/account**: View customer information
+- **/account/edit**: Edit customer details (e.g., Name, Email, Phone number)
+
+### For Support Representatives
+- **/admin**: Add/Manage customers and service requests (e.g., modify status)
+
+---
+
+## Directory Structure
 
 Directory structure:
+```
 └── kushal-zinzuvadia-consumer-services-portal/
     ├── README.md
     ├── LICENSE
@@ -63,8 +77,40 @@ Directory structure:
         ├── urls.py
         ├── wsgi.py
         └── __pycache__/
+```
 
+---
 
-Note: Use following credentials to login temporarily as customer. 
-Customer id: test
-Password: test
+## Temporary Credentials for Testing
+Use the following credentials to log in as a customer:
+- **Customer ID**: `test`
+- **Password**: `test`
+
+---
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## Setup Instructions
+1. Clone the repository:
+   ```git clone https://github.com/kushalzinzuvadia/consumer-services-portal.git```
+
+2. Navigate to the project directory:
+    ```cd kushal-zinzuvadia-consumer-services-portal```
+
+3. Install the required dependencies:
+    ```pip install -r requirements.txt```
+
+4. Run migrations:
+    ```python manage.py migrate```
+
+5. Start the development server:
+    ```python manage.py runserver```
+ 
+6. Access the portal at http://127.0.0.1:8000
+
+---
+
+Author: Kushal Zinzuvadia
