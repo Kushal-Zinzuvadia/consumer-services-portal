@@ -1,7 +1,17 @@
 # consumer-services-portal
-Django application to provide consumer services for gas utilities
+Django application to provide consumer services for gas utilities. 
 
 Refer "Case_study_solution.pdf" for detailed solution. 
+
+For Customer:
+/login: Customer login
+/submit: Customer creates a service request
+/track: To track submitted requests
+/account: View customer information
+/account/edit: Edit customer info like Name, Email, Phone no. 
+
+For Support Representative:
+/admin: Add/Manage customers, service requests(Modify status)
 
 Directory structure:
 └── kushal-zinzuvadia-consumer-services-portal/
@@ -53,3 +63,8 @@ Directory structure:
         ├── urls.py
         ├── wsgi.py
         └── __pycache__/
+
+
+Note: Use following credentials to login temporarily as customer. 
+Customer id: test
+Password: test
